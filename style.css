@@ -107,3 +107,28 @@ body{
         font-size: 16px;
     }
 }
+
+/* For devices with width up to 480px (Mobile) */
+@media (max-width: 480px) {
+    .app {
+        padding: 10px;
+    }
+
+    .app h1 {
+        font-size: 24px;
+    }
+
+    .quiz h2 {
+        font-size: 18px;
+    }
+
+    #answer-btns button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .quiz .next {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
