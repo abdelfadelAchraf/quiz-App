@@ -1,0 +1,82 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    background-color: #001e4d;
+}
+.app{
+    background-color: #fff;
+    width: 90%;
+    padding: 5px ;
+    max-width: 60%;
+    border-radius: 5px;
+    margin: 100px auto 0;
+}
+.app h1{
+    margin: 5px 0 ;
+    font-size: 40px;
+    padding-bottom: 10px;
+    color:#001e4d ;
+    text-align: center;
+}
+.app hr{
+    border: solid 1px #001e4d;
+}
+.quiz{
+    text-align: center;
+}
+.quiz h2{
+    font-size: 25px;
+    padding: 5px 0 ;
+}
+#answer-btns{
+    padding: 0 10px;
+}
+ #answer-btns button{
+    width: 100%;
+    margin: 5px 0 ;
+    padding: 10px ;
+    cursor: pointer;
+    background-color: transparent;
+    color: #000;
+    border: solid 1px #333;
+    text-align: center;
+    font-weight: bold;
+    text-align: left;
+}
+#answer-btns button:hover:not(:disabled){
+    background-color: hsla(0, 0%, 20%, 0.24);
+    color: #fff;
+}
+#answer-btns button:disabled{
+    cursor: no-drop;
+}
+.quiz .next{
+   width: calc(100% - 18px);
+    margin:9px  ;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #001e4d;
+    color: #fff;
+    border: solid 1px #333;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+.quiz .next:hover{
+    background-color: #001e4dc2;
+    color: #fff;
+  
+}
+#answer-btns .correct{
+    background: rgba(0, 128, 0, 0.671);
+    color: #fff;
+}
+#answer-btns  .incorrect{
+    background: rgba(255, 0, 0, 0.438);
+    color: #fff;
+}
