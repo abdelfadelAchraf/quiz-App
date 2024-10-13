@@ -5,9 +5,59 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-body{
+body {
+    margin: 0; /* Remove default body margin */
+    height: 100vh; /* Ensure it covers the full viewport height */
     background: linear-gradient(90deg, #001e4d 50%, #1764e0a4 50%);
+    position: relative; /* Set position to relative for absolute positioning of balls */
+    overflow: hidden; /* Prevent scrollbars from appearing */
 }
+
+.ball {
+    position: absolute; /* Position the balls absolutely */
+    border-radius: 50%; /* Make the balls circular */
+    background-color: rgba(21, 113, 233, 0.459); /* White color with some transparency */
+}
+
+@keyframes moveBall {
+    0% {
+        transform: translateY(0); /* Start at original position */
+    }
+    50% {
+        transform: translateY(-200px); /* Move up */
+    }
+    100% {
+        transform: translateY(0); /* Return to original position */
+    }
+}
+
+/* Creating multiple balls with different sizes and animation delays */
+.ball1 {
+    width: 40px; /* Size of the ball */
+    height: 40px; /* Size of the ball */
+    top: 90%; /* Initial vertical position */
+    left: 10%; /* Initial horizontal position */
+    animation: moveBall 3s ease-in-out infinite; /* Animation properties */
+}
+
+.ball2 {
+    width: 60px; /* Size of the ball */
+    height: 60px; /* Size of the ball */
+    top: 60%; /* Initial vertical position */
+    left: 50%; /* Initial horizontal position */
+    z-index: -1;
+    background-color: #fff;
+    animation: moveBall 4s ease-in-out infinite; /* Animation properties */
+}
+
+.ball3 {
+    width: 30px; /* Size of the ball */
+    height: 30px; /* Size of the ball */
+    top: 90%; /* Initial vertical position */
+    left: 80%; /* Initial horizontal position */
+    animation: moveBall 5s ease-in-out infinite; /* Animation properties */
+}
+
 .app{
     background-color: #fff;
     width: 90%;
@@ -15,6 +65,7 @@ body{
     max-width: 60%;
     border-radius: 5px;
     margin: 100px auto 0;
+    z-index: 999;
 }
 .app h1{
     margin: 5px 0 ;
