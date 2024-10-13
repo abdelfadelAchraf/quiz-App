@@ -80,3 +80,30 @@ body{
     background: rgba(255, 0, 0, 0.438);
     color: #fff;
 }
+
+/* For devices with width up to 768px (Tablets and mobile) */
+@media (max-width: 768px) {
+    .app {
+        max-width: 90%;
+        margin: 50px auto;
+        padding: 15px;
+    }
+
+    .app h1 {
+        font-size: 30px;
+    }
+
+    .quiz h2 {
+        font-size: 20px;
+    }
+
+    #answer-btns button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .quiz .next {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
