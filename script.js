@@ -250,7 +250,7 @@ function selectAnswer(e){
 function  showscore(){
     resetState();
     questionElement.innerHTML = `you scored ${score} out of ${questions.length}! `;
-    nextBtn.innerHTML = "Try again";
+    nextBtn.innerHTML = "Play again";
     nextBtn.style.display ="block";
 }
 function handleNextBtn(){
