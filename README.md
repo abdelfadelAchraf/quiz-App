@@ -13,6 +13,10 @@ A simple interactive quiz application built using HTML, CSS, and JavaScript. The
 - HTML
 - CSS
 - JavaScript
+## Live Demo
+
+You can view the quiz app live at the following link:
+[Quiz App](https://abdelfadelachraf.github.io/quiz-App/)
 
 ## Installation
 1. Clone the repository to your local machine:
